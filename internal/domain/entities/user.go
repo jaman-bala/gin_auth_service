@@ -19,7 +19,7 @@ type User struct {
 	Role       Role      `gorm:"default:user" validate:"required"`
 	Photo      string    `validate:"omitempty,url"`
 
-	IsActive bool `json:"is_active" gorm:"default:true"`
+	IsActive bool `gorm:"default:true"`
 
 	CreatedAt time.Time
 	UpdatedAt time.Time
